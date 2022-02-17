@@ -54,18 +54,18 @@
 .bell{
     position: absolute;
     top: 10px;
-    left: 1390px;
+    left: 1465px;
 }
 .mail{
     position: absolute;
     top: 25px;
-    left: 1335px;
+    left: 1410px;
 }
 .user{
     position: absolute;
     width: 40px;
     height: 80px;
-    left: 1450px;
+    left: 1515px;
     top: 0px;
     /* background: url(Frame-54.png);*/
     border-radius: 30px; 
