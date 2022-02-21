@@ -24,8 +24,8 @@ code {
 }
 .total{
   position: relative;
-  top: 315px;
-  padding-left: 40px;
+  top: 145px;
+  left: 45px;
 }
 .total > p {
   font-family: Montserrat;

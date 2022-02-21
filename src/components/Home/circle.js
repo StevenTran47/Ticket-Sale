@@ -1,5 +1,29 @@
+import React from 'react'
+import { Pie } from '@ant-design/plots'
 import '../../assets/css/circle.css';
 
+const data1 = [{ type: "network 1", value: 38568 }, { type: "network 3", value: 56024 }];
+const data2 = [{ type: "network 1", value: 38302 }, { type: "network 3", value: 30256}]
+const COLORS = ['#FF8A48', '#4F75FF'];
+
+const Circle = ({ data, color: colorIn }) => {
+  const config = {
+    appendPadding: 10,
+    data,
+    width: 246,
+    height: 246,
+    angleField: 'value',
+    colorField: 'type',
+    radius: 1,
+    innerRadius: 0.45,
+    color: colorIn,
+    legend: false,
+    statistic: undefined
+  };
+  return ( 
+    <Pie {...config} />    
+  )
+}
 function circle() {
   return (
     <div className='frame-45'>
@@ -10,27 +34,25 @@ function circle() {
             <i></i><p>Vé đã sử dụng</p>
           </div>
           <div className='frame-7'>
-              <p>Gói sự kiện</p>
+              <h2>Gói sự kiện</h2>
               <div className='chart-7'>
+                <Circle data={data2} color={COLORS} />
                 <div className='elip3'>
-                  <img src='./img/Ellipse 2.png'></img>
                   <p>30256</p>
                 </div>
                 <div className='elip2'>
-                <img src='./img/Ellipse 3.png'></img>
                 <p>28302</p>
                 </div>
               </div>
           </div>
           <div className='frame-53'>
-                <p>Gói gia đình</p>
+                <h2>Gói gia đình</h2>
                     <div className='chart-53'>
+                    <Circle data={data1} color={COLORS} />
                       <div className='elip3-1'>
-                        <img src='./img/Ellipse 2.1.png'></img>
                         <p>56024</p>
                       </div>
                       <div className='elip2-1'>
-                      <img src='./img/Ellipse 3.1.png'></img>
                       <p>13568</p>
                       </div>
                     </div>
