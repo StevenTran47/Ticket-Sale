@@ -3,7 +3,7 @@ import React from "react"
 const Home = () =>{
     return (
         <div className="content">
-            <h1>Cài đặt</h1>
+            <h1>Danh sách gói vé</h1>
         </div>
     )
 }

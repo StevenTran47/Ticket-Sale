@@ -1,45 +1,66 @@
-import React, { useEffect, useState } from "react"
-import { Area } from '@ant-design/plots';   
+import React from "react"
+import { Line } from "@ant-design/charts"
 import '../../assets/css/chart.css'
 
 
 function chart()  {
   const ChartLine = () => {
-    const [ data, setData ] = useState([])
-    useEffect(() => {
-      asyncFetch();
-    }, []);
-  
-    const asyncFetch = () => {
-      fetch('https://gw.alipayobjects.com/os/bmw-prod/1d565782-dde4-4bb6-8946-ea6a38ccf184.json')
-        .then((response) => response.json())
-        .then((json) => setData(json))
-        .catch((error) => {
-          console.log('fetch data failed', error);
-        });
-    };
-  
-    const config = {
+    const data = [
+      {
+          date: 'Thứ 2',
+          scales: '140tr',
+      },
+      {
+          date: 'Thứ 3',
+          scales: '180tr',
+      },
+      {
+          date: 'Thứ 4',
+          scales: '180tr',
+      },
+      {
+          date: 'Thứ 5',
+          scales: '220tr',
+      },
+      {
+          date: 'Thứ 6',
+          scales: '220tr',
+      },
+      {
+          date: 'Thứ 7',
+          scales:  '260tr',
+      },
+      {
+          date: 'CN',
+          scales: '180tr',
+      },
+  ];
+
+  const config = {
       data,
-      xField: 'Date',
+      padding: 40,
+      xField: 'date',
       yField: 'scales',
       xAxis: {
-        range: [0, 1],
-        tickCount: 5,
+          // type: 'timeCat',
+          tickCount: 7,
+          range: [0, 1],
       },
+      yAxis: {
+          minLimit: 140,
+          maxLimit: 260,
+          tickCount: 4,
+      },
+      color: '#FF993C',
       smooth: true,
-      line: {
-        color: '#FF993C',
-        size: 4
-      },
       areaStyle: () => {
-        return {
-          fill: 'l(270) 0:#ffffff 0.74:#FAA05f 1:#FF993C',
-        };
+          return {
+              fill: 'l(270) 0:#ffffff 0.5:#7ec2f3 1:#1890ff',
+          };
       },
-    };
+  };
 
-    return <Area {...config} />;
+  return <Line {...config} />;
 };
   return (
     <div className="chart">
