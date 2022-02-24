@@ -73,7 +73,7 @@
     position: absolute;
     width: 250px;
     height: 178px;
-    left: 60px;
+    left: 100px;
     top: 125px;
     /* Inside auto layout */
     flex: none;
@@ -115,4 +115,9 @@
 }
 .ant-select .ant-select-sm .ant-picker-calendar-year-select .ant-select-single .ant-select-show-arrow .ant-select-open{
     width: 30px;
+}
+/* detali css */
+.ant-picker-calendar-header{
+    position: relative;
+    width: 300px;
 }
