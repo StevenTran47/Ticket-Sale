@@ -3,7 +3,7 @@
     width: 337px;
     height: 40px;
     left: 10px;
-    top: 70px;
+    top: 90px;
     float: left;
     /* Inside auto layout */
     flex: none;
@@ -13,8 +13,8 @@
 }
 .search-icon{
     position: absolute;
-    width: 280px;
+    width: 25px;
     height: 30px;
-    left: 320px;
-    top: 5px;
+    left: 310px;
+    top: 3px;
 }

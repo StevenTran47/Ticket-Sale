@@ -12,9 +12,9 @@ function nav() {
                 <img  src='./img/fi_search.png'></img> 
               </div>
         </div>       
-          <div className='bell'><p><img src='./img/fi_bell.png'></img></p></div>
-          <div className='mail'><img src='./img/fi_mail.png'></img></div>
-          <div className='user'><p><img src='./img/Frame-54.png'></img></p></div>        
+        <div className='mail'><img src='./img/fi_mail.png'></img></div>
+        <div className='bell'><p><img src='./img/fi_bell.png'></img></p></div>        
+        <div className='user'><p><img src='./img/Frame-54.png'></img></p></div>        
       </div>  
   )
 }

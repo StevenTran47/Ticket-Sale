@@ -1,6 +1,6 @@
 import Nav from "../Layout/nav";
 import Menu from "../Layout/menu";
-import { BrowserRouter as Router, Routes, Route, Link} from 'react-router-dom'
+import { BrowserRouter as Router, Routes, Route,} from 'react-router-dom'
 import Control from '../Control/Control';
 import Home from '../Home/Home';
 import Manage from '../Manage/Manage';

@@ -7,7 +7,7 @@ body {
   -moz-osx-font-smoothing: grayscale;
   background: #F9F6F4;
 }
-
+@import 'antd/dist/antd.css';
 code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
@@ -24,7 +24,7 @@ code {
 }
 .total{
   position: relative;
-  top: 145px;
+  top: 65px;
   left: 45px;
 }
 .total > p {
@@ -49,8 +49,8 @@ code {
 }
 .total >h5 {
   position: relative;
-  left: 115px;
-  top: -65px;
+  left: 95px;
+  top: -50px;
 
   /* 14 medium */
   font-family: Montserrat;

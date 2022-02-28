@@ -51,23 +51,22 @@
     left: 320px;
     top: 5px;
 }
-.bell{
-    position: absolute;
-    top: 10px;
-    left: 1465px;
-}
 .mail{
     position: absolute;
     top: 25px;
     left: 1410px;
+}
+.bell{
+    position: absolute;
+    top: 25px;
+    left: 1465px;
 }
 .user{
     position: absolute;
     width: 40px;
     height: 80px;
     left: 1515px;
-    top: 0px;
-    /* background: url(Frame-54.png);*/
+    top: 15px;
     border-radius: 30px; 
     /* Inside auto layout */
     flex: none;
