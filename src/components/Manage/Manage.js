@@ -20,12 +20,12 @@ const Home = () =>{
         <div className="content">
             <h1>Danh sách vé</h1>
             <Search />
-            <div className="control">
+            <div className="manage-btn">
                 <div className="filter-btn">
                     <button type="button" className="button" onClick={showModal}>     
                     <Icon style={{ paddingRight: 5 }} component={() => (<img src={filter} alt='' />)} />              
                         Lọc vé
-            </button>
+                    </button>
                 </div>
                 <div className="file-btn">
                     <button type="button" className="button">

@@ -1,5 +1,5 @@
 import React from "react"
-import { Line } from "@ant-design/charts"
+import { Area } from "@ant-design/charts"
 import '../../assets/css/chart.css'
 
 
@@ -42,7 +42,6 @@ function chart()  {
       xField: 'date',
       yField: 'scales',
       xAxis: {
-          // type: 'timeCat',
           tickCount: 7,
           range: [0, 1],
       },
@@ -55,12 +54,12 @@ function chart()  {
       smooth: true,
       areaStyle: () => {
           return {
-              fill: 'l(270) 0:#ffffff 0.5:#7ec2f3 1:#1890ff',
+              fill: 'l(270) 0:#ffffff 1:#FAA05F',
           };
       },
   };
 
-  return <Line {...config} />;
+  return <Area {...config} />;
 };
   return (
     <div className="chart">
