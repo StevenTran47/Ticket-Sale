@@ -12,6 +12,7 @@ const Home = ()=>{
                     <Ticket />
                 </div>
             </div>
+            
         </div>
     )
 }
