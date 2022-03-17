@@ -4,6 +4,7 @@ import Icon from "@ant-design/icons"
 import filter from "../../assets/icon/filter.svg"
 import Filter from "../shared/filter"
 import { Modal, Table, Tag } from "antd"
+import { GoPrimitiveDot } from 'react-icons/go'
 import { collection, getDocs, query, orderBy } from "firebase/firestore"
 import db from "../../database"
 import '../../assets/css/manage.css'
@@ -71,7 +72,7 @@ const Home = () =>{
                 }
                 return (
                     <Tag color={color}>
-                        {status}
+                        <GoPrimitiveDot />{status}
                     </Tag>
                 )
             }
