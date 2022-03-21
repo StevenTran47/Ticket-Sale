@@ -7,6 +7,10 @@ import db from "../../database"
 import "../../assets/css/control.css"
 const Home = ()=>{
     const [table, setTable] = useState([]);
+    console.log(table);
+    const [value, setValue] = useState();
+    const [filter, setFilter] = useState([]);
+    console.log(filter);
 
     const fetchTable = async () => {
         const response = query(collection(db, 'listTicket'), orderBy('STT'));
@@ -19,6 +23,13 @@ const Home = ()=>{
     useEffect(() => {
         fetchTable();
     }, [])
+
+    const handleFilter = () => {
+        setFilter(() => {
+          return table.filter((item) => item.check == value);
+        });
+        return setTable(filter);
+      };
 
     const columns = [
         {
@@ -74,7 +85,10 @@ const Home = ()=>{
             <Search />
             <div className="filter-ticket-content">
                 <div className="filter-ticket">
-                    <Ticket />
+                    <Ticket
+                    value={(e) => setValue(e.target.value)}
+                    handleFilter={handleFilter} 
+                    />
                 </div>
             </div>
             <div className="db-content"><Table columns={columns} dataSource={table} /></div>
