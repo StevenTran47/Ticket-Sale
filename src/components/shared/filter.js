@@ -11,13 +11,6 @@ const FilterTicket = (props) => {
   const value = props.value;
   const handleFilter = props.handleFilter;
 
-
-  //   const [value, setValue] = React.useState(1);
-
-  //   const onChange = (e) => {
-  //     setValue(e.target.value);
-  //   };
-
   const handleReset = () => {};
 
   return (
